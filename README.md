@@ -34,9 +34,11 @@ In the box
 
 Endpoint Snitches
 ---
-Switch to use a PropertyFileSnitch by specifying an environment variable with the DC name:
+Switch to use a PropertyFileSnitch by specifying an environment variable with the DC name in the cassandra-base/Dockerfile. 
+
+Currently it is set to:
 ```
-export CASSANDRA_DC=Cassandra
+ENV CASSANDRA_DC Cassandra
 ```
 
 Notes
