@@ -32,6 +32,13 @@ In the box
   The base image with an unconfigured Cassandra installation. You probably don't want to use this
   directly. Built from the `cassandra-base` directory.
 
+Endpoint Snitches
+---
+Switch to use a PropertyFileSnitch by specifying an environment variable with the DC name:
+```
+export CASSANDRA_DC=Cassandra
+```
+
 Notes
 ---
 Things are still under heavy development:
