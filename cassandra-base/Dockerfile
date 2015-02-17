@@ -23,6 +23,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 ENV CASSANDRA_CONFIG /etc/cassandra
+ENV CASSANDRA_DC Cassandra
 
 # Run base config script
 ADD scripts/config-cassandra-base.sh /usr/local/bin/config-cassandra-base
