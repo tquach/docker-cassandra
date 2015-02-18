@@ -4,6 +4,11 @@ Cassandra in Docker
 This repository provides everything you need to run Cassandra in Docker, and is tuned for fast
 container startup.
 
+The following differences are made from the original Spotify fork:
+
+- Cassandra version packaged is [2.0.11](https://git1-us-west.apache.org/repos/asf?p=cassandra.git;a=blob_plain;f=CHANGES.txt;hb=refs/tags/cassandra-2.0.11).
+- The CASSANDRA_DC environment was added in the [cassandra-base/Dockerfile](https://github.com/tquach/docker-cassandra/commit/4c14cd76c96b525601dec43f017984aa06407efc) in order to use PropertyFileSnitch option.
+
 Why?
 ---
 While naive Cassandra images take around 30 seconds to start, our containers take only a few seconds.
